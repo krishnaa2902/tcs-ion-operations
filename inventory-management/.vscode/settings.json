@@ -1,0 +1,11 @@
+{
+    "[yaml]": {
+        "editor.tabSize": 4
+    },
+    "[dockercompose]": {
+        "editor.tabSize": 4
+    },
+    "[dart]": {
+        "editor.tabSize": 4
+    }
+}

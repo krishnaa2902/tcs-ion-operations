@@ -1,0 +1,201 @@
+.App {
+  text-align:center;
+  background-color: rgb(255, 255, 255);
+}
+
+.title {
+  margin-top:8px;
+  text-align:center;
+  font-style: verdana;
+  margin-right:28% ;
+}
+
+.navpos {
+  position: sticky;
+  width: 100%;
+  top: 0px;;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #f2f7fc; */
+  background-color: #dee7ff
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(86, 86, 86);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.item_group {
+        width:450px;
+        height:200px;
+        margin:10px;
+        background-color: #e7f8fd;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #beeeff;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d4f1ff;
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(80, 80, 80, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(167, 186, 255);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #7693ff;}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* style={{width:500,margin:`auto`, marginBottom:30,marginTop:30,backgroundColor:`#dee7ff`,padding:30,borderRadius:10}} */
+
+.form-container {
+  width:500;
+  margin:25%;
+  margin-bottom:30px;
+  margin-top:30px;
+  background-color:#dee7ff;
+  box-shadow: 0 3px 10px #413e65;
+  padding:30px;
+  border-radius:10px;
+}
+
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  width:200px;
+  font-family: Arial;
+  background-color: rgb(202, 214, 255);
+  border-radius:6px;
+  top: 14px;
+  right: 10px;
+  width: 250px;
+  height: 35px;
+
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.link {
+  text-decoration: none;
+  color:white;
+}
