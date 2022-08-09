@@ -41,7 +41,7 @@ export default function VendorShow(  ) {
     return ( 
         <>
 
-        <Table striped bordered hover variant="light" style={{fontSize:18 , width:700, marginLeft:420}}>
+        <Table striped bordered hover variant="light" style={{fontSize:18 }}>
             <thead>
               <tr>
                 <th>S.No</th>

@@ -36,7 +36,7 @@ export default function VendorCreditShow(  ) {
     return ( 
         <>
 
-		<Table striped bordered hover variant="light" style={{fontSize:18 , width:"70%", marginLeft:"15%"}}>
+		<Table striped bordered hover variant="light" style={{fontSize:18 }}>
             <thead>
               <tr>
                 <th>S.No</th>

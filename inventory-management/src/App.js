@@ -32,6 +32,20 @@ import AddPurchaseOrders from "./components/purchaseorders";
 import PurchasesPayments from "./components/purchasepayments";
 import VendorCredit from "./components/vendorcredit";
 
+import ItemShow from "./components/item-dashboard";
+import CustomerShow from "./components/customerList";
+import SalesOrdersShow from './components/salesorders-dashboard';
+import PurchaseOrdersShow from './components/purchaseorders-dashboard';
+import PackagesShow from './components/packages-dashboard';
+import SalesPaymentsShow from './components/salespayments-dashboard';
+import SalesReturnShow from './components/salesreturn-dashboard';
+import VendorCreditShow from './components/vendorcredit-dashboard';
+import VendorShow from './components/vendors-dashboard';
+import SalesInvoiceShow from './components/salesinvoice-dashboard';
+import PurchasePaymentsShow from './components/purchasepayments-dashboard';
+import DeliveryChallanShow from './components/deliverychallan-dashboard';
+import CreditNotesShow from './components/creditnotes-dashboard';
+
 
 import background from "./components/inventory-bg.jpg";
 
@@ -50,6 +64,21 @@ export default class App extends Component {
         <ColorSchemesExample/>
           <Routes>     
             <Route exact path="/" element={<Dashboard/>} />
+
+            <Route path="/item-dashboard" element={<ItemShow/>} />
+            <Route path="/customer-dashboard" element={<CustomerShow/>} />
+            <Route path="/salesorder-dashboard" element={<SalesOrdersShow/>} />
+            <Route path="/purchaseorder-dashboard" element={<PurchaseOrdersShow/>} />
+            <Route path="/packagesshow-dashboard" element={<PackagesShow/>} />
+            <Route path="/salespayments-dashboard" element={<SalesPaymentsShow/>} />
+            <Route path="/salesreturn-dashboard" element={<SalesReturnShow/>} />
+            <Route path="/vendorcredit-dashboard" element={<VendorCreditShow/>} />
+            <Route path="/vendor-dashboard" element={<VendorShow/>} />
+            <Route path="/salesinvoice-dashboard" element={<SalesInvoiceShow/>} />
+            <Route path="/purchasepayments-dashboard" element={<PurchasePaymentsShow/>} />
+            <Route path="/deliverychallan-dashboard" element={<DeliveryChallanShow/>} />
+            <Route path="/creditnotes-dashboard" element={<CreditNotesShow/>} />
+
             <Route path="/inventory" element={<Inventory/>} />
             <Route path="/sales" element={<Sales/>} />
             <Route path="/purchases" element={<Purchases/>} />

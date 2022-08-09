@@ -119,6 +119,36 @@ export default function AddSalesOrders() {
 
             setSalesOrders(salesorders => [...salesorders,newSalesOrders]);
 
+            
+          
+
+            axios.get('http://localhost:5000/items/'+formData.so_item_id.value)
+            .then(res => {
+              const upitqty = {
+                item_group_name :res.data.item_group_name,
+                item_name : res.data.item_name,
+                item_quantity : Number(res.data.item_quantity) - Number(formData.so_qty.value),
+                item_dimensions : res.data.item_dimensions,
+                item_weight : Number(res.data.item_weight),
+                item_manufacturer : res.data.item_manufacturer,
+                item_brand : res.data.item_brand,
+                item_selling_price : Number(res.data.item_selling_price),
+                item_cost_price : Number(res.data.item_cost_price),
+                item_opening_stock : Number(res.data.item_opening_stock),
+                item_reorder_point : Number(res.data.item_reorder_point),
+                item_vendor : res.data.item_vendor
+              }
+              console.log("upitqty")
+              console.log(upitqty)
+
+              axios.post('http://localhost:5000/items/update/'+formData.so_item_id.value,upitqty)
+              .then(res => console.log(res.data));
+
+            });
+            
+
+
+
           }
 
 
