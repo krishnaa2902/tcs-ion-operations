@@ -32,7 +32,7 @@ function ColorSchemesExample() {
 
           
 
-          <h3 className="title">OPERATIONS-MANAGEMENT</h3>
+          <h3 className="title">OPERATIONS MANAGEMENT</h3>
         </ul>
 
         
