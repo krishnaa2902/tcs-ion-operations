@@ -7,13 +7,11 @@ export default function PurchasePayments() {
     const [purchaseorders,setPurchaseorders] = useState([]);
     const [items,setItems] = useState([])
     const [it,setIt] = useState("")
-    const [itcost,setItcost] = useState()
-    const [amount,setAmount] = useState(0)
+    const [itcost,setItcost] = useState(0)
+    const [poqty,setPoQty] = useState(0)
     const [inputValue, setInputValue] = useState("");
     const inputElement = useRef();
     const itid = useRef("");
-
-
 
 
     useEffect(() => {
@@ -25,6 +23,9 @@ export default function PurchasePayments() {
         console.log(datas.po_item_id)
         itid.current = datas.po_item_id;
         setIt(datas.po_item_id);
+        setPoQty(datas.po_qty);
+
+
         axios.get('http://localhost:5000/items/'+itid.current)
         .then(res => {
           let datas = res.data;
@@ -135,7 +136,7 @@ export default function PurchasePayments() {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicItem">
                   <Form.Label>Amount to be Payed{/*{inputValue}:{it}-{itcost}={itid.current}*/}</Form.Label>
-                  <Form.Control type="number" placeholder="Enter Amount" value={itcost} name="pp_amt"  />
+                  <Form.Control type="number" placeholder="Enter Amount" value={itcost * poqty} name="pp_amt"  />
                 </Form.Group>
                 <Button variant="primary" type="submit">Add Payment</Button>
             </Form>

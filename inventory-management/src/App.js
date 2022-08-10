@@ -10,8 +10,6 @@ import EditItems from './components/editItems';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from "react-bootstrap";
-import AddInventory from './components/classComponent';
-import ItemGroup from './components/itemGroupComponent';
 import ColorSchemesExample from './components/navbar';
 
 
@@ -45,6 +43,8 @@ import SalesInvoiceShow from './components/salesinvoice-dashboard';
 import PurchasePaymentsShow from './components/purchasepayments-dashboard';
 import DeliveryChallanShow from './components/deliverychallan-dashboard';
 import CreditNotesShow from './components/creditnotes-dashboard';
+import ItemGroup from "./components/itemGroupComponent";
+import AddItem from './components/items';
 
 
 import background from "./components/inventory-bg.jpg";
@@ -78,6 +78,9 @@ export default class App extends Component {
             <Route path="/purchasepayments-dashboard" element={<PurchasePaymentsShow/>} />
             <Route path="/deliverychallan-dashboard" element={<DeliveryChallanShow/>} />
             <Route path="/creditnotes-dashboard" element={<CreditNotesShow/>} />
+
+            <Route path="/inventory/itemgroups" element={<ItemGroup/>} />
+            <Route path="/inventory/items" element={<AddItem/>} />
 
             <Route path="/inventory" element={<Inventory/>} />
             <Route path="/sales" element={<Sales/>} />

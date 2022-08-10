@@ -41,7 +41,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: #dee7ff;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
@@ -55,7 +55,8 @@ li a:hover {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #beeeff;
+  background-color: #dee7ff;
+
   margin-left: 0px;
   color: rgb(0, 0, 0);
   padding: 16px;
@@ -65,7 +66,9 @@ li a:hover {
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
+  position: absolute;
+  left: -44%;
+  top: -73px;
   display: inline-block;
 }
 
@@ -73,7 +76,7 @@ li a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #d4f1ff;
+  background-color: #dee7ff;
   min-width: 500px;
   box-shadow: 0px 8px 16px 0px rgba(80, 80, 80, 0.2);
   z-index: 1;
@@ -94,7 +97,7 @@ li a:hover {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #7693ff;}
+.dropdown:hover .dropbtn {background-color: #b7caff;}
 
 
 .row {
@@ -133,7 +136,7 @@ li a:hover {
 
 /* The container must be positioned relative: */
 .custom-select {
-  position: relative;
+  position: static;
   width:200px;
   font-family: Arial;
   background-color: rgb(202, 214, 255);
@@ -199,4 +202,17 @@ li a:hover {
 .link {
   text-decoration: none;
   color:white;
+}
+
+img {
+  -webkit-animation: mover 1.5s infinite  alternate;
+  animation: mover 1.5s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
 }

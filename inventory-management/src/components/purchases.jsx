@@ -1,13 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router,  
-  Route, Routes , Link} from "react-router-dom";
+import { BrowserRouter as Router,Route, Routes , Link} from "react-router-dom";
+import purchaseimage from "../purchaseimage.jpg";
 
 
 const Purchases = () => {
 return (
 	<div>
         <h1>PURCHASES</h1>
-
+		<img src={purchaseimage} style={{height:"450px",width:"650px",position: 'absolute',right: 30,top: 140}}/>
 		  <div className="dropdown">
 		  <button className="dropbtn">PURCHASES OPTIONS</button>
 		  <div className="dropdown-content">

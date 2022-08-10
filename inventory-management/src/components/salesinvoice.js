@@ -113,7 +113,7 @@ export default function SalesInvoice() {
                 </Form.Group>
                 
                 <Form.Group className="mb-3" controlId="formBasicItem">
-                <Form.Label>Amount to be Payed    *QTY:{soqty} PRICE:{itcost}</Form.Label>
+                 <Form.Label>Amount to be Payed    </Form.Label>   {/*  *QTY:{soqty} PRICE:{itcost} */}
                   <Form.Control type="number" placeholder="Enter Amount" value={itcost*soqty} name="inv_amt"  />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicItem">

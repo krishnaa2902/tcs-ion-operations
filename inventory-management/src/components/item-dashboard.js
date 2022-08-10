@@ -37,7 +37,6 @@ export default function ItemShow(  ) {
                 <th>Opening Stock</th>
                 <th>Reorder Point</th>
                 <th>Vendor</th>
-                <th>Image</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -61,7 +60,6 @@ export default function ItemShow(  ) {
                     		<td>{item.item_opening_stock}</td>
                     		<td>{item.item_reorder_point}</td>
                     		<td>{item.item_vendor}</td>
-                    		<td>image</td>
                     		<td><Button variant="success" type="button">
 								<Link to={"/inventory/editItems/"+item._id} className="link">EDIT</Link>
 								</Button></td>

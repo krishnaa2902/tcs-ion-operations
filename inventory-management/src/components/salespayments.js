@@ -8,23 +8,20 @@ export default function SalesPayments() {
     const [items,setItems] = useState([])
     const [it,setIt] = useState("")
     const [itcost,setItcost] = useState()
-    const [amount,setAmount] = useState(0)
+    const [soqty,setSoQty] = useState(0)
     const [inputValue, setInputValue] = useState("");
     const inputElement = useRef();
     const itid = useRef("");
-
-
-
 
     useEffect(() => {
       inputElement.current = inputValue;
       axios.get('http://localhost:5000/salesorders/'+inputElement.current)
       .then(res => {
         let datas = res.data;
-        console.log("mm")
         console.log(datas.so_item_id)
         itid.current = datas.so_item_id;
         setIt(datas.so_item_id);
+        setSoQty(datas.so_qty);
 
         axios.get('http://localhost:5000/items/'+itid.current)
         .then(res => {
@@ -33,9 +30,10 @@ export default function SalesPayments() {
         })
 
       })
-
-
     }, [inputValue]);
+
+
+
 
     // useEffect(() => {
     //   console.log("onion")
@@ -133,7 +131,7 @@ export default function SalesPayments() {
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicItem">
                   <Form.Label>Amount to be Payed</Form.Label>
-                  <Form.Control type="number" placeholder="Enter Amount" value={itcost} name="sp_amt"  />
+                  <Form.Control type="number" placeholder="Enter Amount" value={itcost * soqty} name="sp_amt"  />
                 </Form.Group>
                 <Button variant="primary" type="submit">Add Payment</Button>
             </Form>

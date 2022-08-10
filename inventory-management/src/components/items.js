@@ -73,7 +73,7 @@ export default function AddItem() {
     
     return (
         <div>
-              <ItemGroup/>
+              {/* <ItemGroup/> */}
             
               <Form onSubmit={add} className="form-container">
               <div className="row"> 
@@ -127,7 +127,7 @@ export default function AddItem() {
                   <Form.Control type="number" placeholder="Enter Weight" name="item_weight" />
                 </Form.Group>
                 </div>
-              </div>
+              </div>  
 
               <div className="row"> 
                 <div className="column">             

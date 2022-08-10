@@ -28,7 +28,8 @@ export default function EditCustomer(  ) {
 
         const newEditCust = {
         cust_name: formData.cust_name.value,
-        cust_email:formData.cust_email.value
+        cust_email:formData.cust_email.value,
+        cust_add:formData.cust_add.value
         }
 
         
@@ -66,6 +67,11 @@ export default function EditCustomer(  ) {
                 <Form.Group className="mb-3" controlId="formBasicItem">
                   <Form.Label>Customer Email</Form.Label>
                   <Form.Control type="email" placeholder={editCustomer.cust_email} name="cust_email" />
+                </Form.Group>
+
+                <Form.Group className="mb-3" controlId="formBasicItem">
+                  <Form.Label>Customer Address</Form.Label>
+                  <Form.Control type="text"  placeholder={editCustomer.cust_add} name="cust_add" />
                 </Form.Group>
                 <Button variant="primary" type="submit">Edit Customer</Button>
             </Form>
