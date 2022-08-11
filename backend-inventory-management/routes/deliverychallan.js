@@ -11,13 +11,13 @@ router.route('/').get((req, res) => {
 
 
 router.route('/add').post((req, res) => {
-    const dc_cust_name = req.body.dc_cust_name;
+    const dc_cust_email = req.body.dc_cust_email;
     const dc_date = Date(req.body.dc_date);
     const dc_status = req.body.dc_status;
  
 
   const newDeliveryChallan = new DeliveryChallan({
-    dc_cust_name,
+    dc_cust_email,
     dc_date,
     dc_status
 
@@ -41,7 +41,7 @@ router.route('/:id').delete((req, res) => {
 router.route('/update/:id').post((req, res) => {
   DeliveryChallan.findById(req.params.id)
     .then(deliverychallan => {
-        dc_cust_name = req.body.dc_cust_name;
+        dc_cust_email = req.body.dc_cust_email;
         dc_date = Date(req.body.dc_date);
         dc_status = req.body.dc_status;
 

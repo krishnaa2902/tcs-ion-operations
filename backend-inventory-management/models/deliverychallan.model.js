@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let DeliveryChallan = new Schema({
-    dc_cust_name: {
+    dc_cust_email: {
         type: String
     },
     dc_date: {
