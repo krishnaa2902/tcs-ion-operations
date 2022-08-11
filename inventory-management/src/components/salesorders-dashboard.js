@@ -20,7 +20,7 @@ export default function SalesOrdersShow(  ) {
 	},[sales])
     return ( 
         <>
-
+		<h3>SALES ORDERS</h3>
 		<Table striped bordered hover variant="light" style={{fontSize:18 }}>
             <thead>
               <tr>
@@ -31,7 +31,7 @@ export default function SalesOrdersShow(  ) {
 				<th>Item Group Name</th>
 				<th>Item ID</th>
                 <th>Quantity</th>
-                <th>Action</th>
+                {/* <th>Action</th> */}
 
               </tr>
             </thead>
@@ -49,10 +49,10 @@ export default function SalesOrdersShow(  ) {
 							<td>{sale.so_grp_name}</td>
 							<td>{sale.so_item_id}</td>
                             <td>{sale.so_qty}</td>
-                    		<td><Button variant="success" type="button">
+                    		{/* <td><Button variant="success" type="button">
 								EDIT
 								</Button>
-                            </td>
+                            </td> */}
                     		</tr>
 
 						</>

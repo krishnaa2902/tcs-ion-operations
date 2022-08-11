@@ -40,7 +40,7 @@ export default function CustomerShow(  ) {
 
     return ( 
         <>
-
+        <h3>CUSTOMERS</h3>
         <Table striped bordered hover variant="light" style={{fontSize:18 }}>
             <thead>
               <tr>

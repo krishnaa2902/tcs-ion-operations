@@ -22,15 +22,15 @@ export default function DeliveryChallanShow(  ) {
 
     return ( 
         <>
-
+		<h3>DELIVERY CHALLAN</h3>
 		<Table striped bordered hover variant="light" style={{fontSize:18 }}>
             <thead>
               <tr>
                 <th>S.No</th>
-                <th>Customer Name</th>
+                <th>Customer Email</th>
                 <th>Date</th>
                 <th>Status</th>
-                <th>Action</th>
+                {/* <th>Action</th> */}
 
               </tr>
             </thead>
@@ -42,13 +42,13 @@ export default function DeliveryChallanShow(  ) {
 
 							<tr key={index}>
                     		<td>{index+1}</td>
-                            <td>{dc.dc_cust_name}</td>
+                            <td>{dc.dc_cust_email}</td>
                             <td>{dc.dc_date}</td>
                             <td>{dc.dc_status}</td>					
-                    		<td><Button variant="success" type="button">
+                    		{/* <td><Button variant="success" type="button">
 								EDIT
 								</Button>
-                            </td>
+                            </td> */}
                     		</tr>
 
 						</>

@@ -172,12 +172,12 @@ export default function EditItems(  ) {
                         <Form.Control type="text" placeholder={editItems.item_vendor} name="item_vendor" />
                       </Form.Group>
                       </div>  
-                      <div className="column">
+                      {/* <div className="column">
                       <Form.Group className="mb-3" controlId="formBasicPrice">
                         <Form.Label>Image</Form.Label>
                         <Form.Control type="file" accept="image/*" placeholder={editItems.item_image} name="item_image" />
                       </Form.Group>
-                      </div>
+                      </div> */}
                     </div>             
                     <Button variant="primary" type="submit">
                       Add to Invetory

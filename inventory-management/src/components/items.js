@@ -179,12 +179,12 @@ export default function AddItem() {
                   <Form.Control type="text" placeholder="Enter preferred Vendor" name="item_vendor" />
                 </Form.Group>
                 </div>  
-                <div className="column">
+                {/* <div className="column">
                 <Form.Group className="mb-3" controlId="formBasicPrice">
                   <Form.Label>Image</Form.Label>
                   <Form.Control type="file" accept="image/*" placeholder="Upload Image" name="item_image" />
                 </Form.Group>
-                </div>
+                </div> */}
               </div>             
               <Button variant="primary" type="submit">
                 Add to Invetory

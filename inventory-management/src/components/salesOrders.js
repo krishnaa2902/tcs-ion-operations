@@ -202,7 +202,7 @@ export default function AddSalesOrders() {
                       items.map((item, index)=> {
                         return ( 
                           
-                          <option value={item._id} key={index}>Item Name :{item.item_name} Item Id :{item._id}</option>
+                          <option value={item._id} key={index}>Group :{item.item_group_name} Item Name :{item.item_name} Item Id :{item._id}</option>
                           
                         )
                       })

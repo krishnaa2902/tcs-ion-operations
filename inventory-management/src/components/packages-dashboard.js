@@ -20,14 +20,14 @@ export default function PackagesShow(  ) {
 	},[packages])
     return ( 
         <>
-
+		<h3>PACKAGES</h3>
 		<Table striped bordered hover variant="light" style={{fontSize:18}}>
             <thead>
               <tr>
                 <th>S.No</th>
                 <th>Sales Order Id</th>
                 <th>Package Delivery Address</th>
-                <th>Action</th>
+                {/* <th>Action</th> */}
 
               </tr>
             </thead>
@@ -42,10 +42,10 @@ export default function PackagesShow(  ) {
                             <td>{pac.pac_id}</td>
                             <td>{pac.pac_add}</td>
 							
-                    		<td><Button variant="success" type="button">
+                    		{/* <td><Button variant="success" type="button">
 								EDIT
 								</Button>
-                            </td>
+                            </td> */}
                     		</tr>
 
 						</>

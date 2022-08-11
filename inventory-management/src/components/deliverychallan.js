@@ -48,9 +48,9 @@ function AddCustomers() {
             dc_date:Date(formData.dc_date.value),
             dc_status: formData.dc_status.value
         }
-  
+        console.log(newDeliverychallan);
     
-        axios.post('http://localhost:5000/deliverychallan/add',deliverychallan)
+        axios.post('http://localhost:5000/deliverychallan/add',newDeliverychallan)
         .then(res => console.log(res.data));
         
 
@@ -80,7 +80,7 @@ function AddCustomers() {
                     <br/><br/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicItem">
-                  <Form.Label>Customer Name</Form.Label>
+                  <Form.Label>Customer Email</Form.Label>
                   <Form.Control type="text" placeholder="Enter Customer Email" value={socustemail} name="dc_cust_email" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicItem">

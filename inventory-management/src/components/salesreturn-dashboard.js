@@ -35,14 +35,14 @@ export default function SalesReturnShow(  ) {
 
     return ( 
         <>
-
+		<h3>SALES RETURNS</h3> 
 		<Table striped bordered hover variant="light" style={{fontSize:18}}>
             <thead>
               <tr>
                 <th>S.No</th>
                 <th>Sales Order Id</th>
                 <th>Reason</th>
-                <th>Action</th>
+                {/* <th>Action</th> */}
 
               </tr>
             </thead>
@@ -57,10 +57,10 @@ export default function SalesReturnShow(  ) {
                             <td>{sr.sr_id}</td>
                             <td>{sr.sr_reason}</td>
 							
-                    		<td><Button variant="success" type="button">
+                    		{/* <td><Button variant="success" type="button">
 								EDIT
 								</Button>
-                            </td>
+                            </td> */}
                     		</tr>
 
 						</>

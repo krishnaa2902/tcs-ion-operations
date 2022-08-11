@@ -49,7 +49,7 @@ export default function SalesInvoiceShow(  ) {
 
     return ( 
         <>
-
+		<h3>SALES INVOICE</h3>
 		<Table striped bordered hover variant="light" style={{fontSize:18 }}>
             <thead>
               <tr>
@@ -58,7 +58,7 @@ export default function SalesInvoiceShow(  ) {
                 <th>Amount</th>
                 <th>Email</th>
                 <th>Address</th>
-                <th>Action</th>
+                {/* <th>Action</th> */}
 
               </tr>
             </thead>
@@ -75,10 +75,10 @@ export default function SalesInvoiceShow(  ) {
                             <td>{inv.inv_email}</td>
                             <td>{inv.inv_add}</td>
 							
-                    		<td><Button variant="success" type="button">
+                    		{/* <td><Button variant="success" type="button">
 								EDIT
 								</Button>
-                            </td>
+                            </td> */}
                     		</tr>
 
 						</>

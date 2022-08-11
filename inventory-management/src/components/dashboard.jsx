@@ -17,6 +17,8 @@ import VendorCreditShow from "./vendorcredit-dashboard";
 import image1 from "../img-inventory-control.png";
 import dashboardimage3 from "../dashboardimage3.svg";
 
+import dashboardcard from "../dashboardcard.png";
+
 
 
 
@@ -36,7 +38,8 @@ function Dashboard() {
     <div>
     
     <h1>DASHBOARD</h1>
-    <img src={dashboardimage3} style={{height:"550px",width:"650px",position: 'absolute',right: 30,top: 100}}/>
+
+    <img src={dashboardimage3} className="imgmov" style={{height:"550px",width:"650px",position: 'absolute',right: 30,top: 100}}/>
     <div className="dropdown">
 		  <button className="dropbtn" >DASHBOARD OPTIONS</button>
 		  <div className="dropdown-content">
@@ -55,6 +58,18 @@ function Dashboard() {
         <Link to="/vendorcredit-dashboard">SHOW VENDOR CREDIT</Link>
 		  </div>
 		</div>
+    <div className="card">
+      <img src={dashboardcard} style={{height:"250px",width:"100%"}}/>
+      <div className="container">
+        <h4><b>DASHBOARD</b></h4>
+          <p>
+            lorem ipsum dolor sit amet, consectetur adip Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Quae hic sapiente mollitia ratione eos dolores consequuntur voluptatem eligendi magni voluptas 
+            fuga ab consequatur excepturi non, deserunt consectetur reiciendis earum. Officia. Lorem, ipsum dolor Lorem, ipsum dolor deserunt consectetur
+            
+          </p>
+      </div>
+    </div>
 
 
 

@@ -20,7 +20,7 @@ export default function ItemShow(  ) {
 	},[state])
     return ( 
         <>
-
+		<h3>ITEMS</h3>
 		<Table striped bordered hover variant="light" style={{fontSize:18}}>
             <thead>
               <tr>

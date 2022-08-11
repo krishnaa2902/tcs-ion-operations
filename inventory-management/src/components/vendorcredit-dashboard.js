@@ -35,14 +35,14 @@ export default function VendorCreditShow(  ) {
 
     return ( 
         <>
-
+		<h3>VENDOR CREDITS</h3>
 		<Table striped bordered hover variant="light" style={{fontSize:18 }}>
             <thead>
               <tr>
                 <th>S.No</th>
                 <th>Sales Order Id</th>
                 <th>Amount</th>
-                <th>Action</th>
+                {/* <th>Action</th> */}
 
               </tr>
             </thead>
@@ -57,10 +57,10 @@ export default function VendorCreditShow(  ) {
                             <td>{vc.vc_id}</td>
                             <td>{vc.vc_amt}</td>
 							
-                    		<td><Button variant="success" type="button">
+                    		{/* <td><Button variant="success" type="button">
 								EDIT
 								</Button>
-                            </td>
+                            </td> */}
                     		</tr>
 
 						</>
